@@ -1,0 +1,471 @@
+/*Universal Styles*/
+html {
+  font-size: 16px;
+  color: #403234;
+  clear: both;
+  background-image: url(../images/banner.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Lora', serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+main {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+
+.center {
+  text-align: center;
+}
+
+.image-container {
+  overflow: hidden;
+}
+
+.image-container img {
+  display: block;
+}
+
+.cursive {
+  font-family: 'Dancing Script', cursive;
+}
+
+/*Header Styles */
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #e2c2b3;
+  border: 2px solid #f7f3f5;
+  z-index: 100;
+}
+
+header .content {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  justify-content: end;
+}
+
+header .logo {
+  flex: 1;
+  margin-right: 10rem;
+  font-size: 2rem;
+  color: #403234;
+  text-decoration: none;
+}
+
+header nav ul {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+}
+
+nav a {
+  vertical-align: bottom;
+  text-decoration: none;
+  padding: 1.8rem;
+  color: #403234;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 694px) {
+  header .content {
+    padding: .5rem 0;
+    justify-content: center;
+    align-items: center;
+  }
+  header .logo {
+    display: none;
+  }
+  header ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+/*Main Styles*/
+
+#welcome {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  height: 43.5rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  z-index: 0;
+}
+
+#welcome .content {
+  align-items: center;
+  width: 25rem;
+  margin: 20rem 25rem;
+  padding: 2rem;
+  background-color: #e2c2b3;
+  border: 3px solid #f7f3f5;
+  border-radius: 1rem;
+}
+
+#welcome .title {
+  font-size: 3rem;
+  margin: .75rem;
+}
+
+#welcome h2 {
+  font-size: 1.5rem;
+  padding: .5rem;
+}
+
+@media only screen and (max-width: 900px) {
+  #welcome {
+    align-items: center;
+    justify-content: center;
+    height: 28rem;
+  }
+
+  #welcome-content {
+    width: 15rem;
+    flex: 1;
+  }
+  #welcome .title {
+    font-size: 1.5rem;
+    margin: .75rem;
+  }
+  
+  #welcome h2 {
+    font-size: .75rem;
+    padding: .5rem;
+  }
+}
+
+/*About Styles*/
+
+#about {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 4.5rem;
+  margin-bottom: 4rem;
+  height: 57rem;
+  background-color: #e2c2b3;
+  align-items: center;
+}
+
+#about h2 {
+  align-self: center;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  background-color: #f7f3f5;
+  border: 3px solid#403234;
+  border-radius: 3rem;
+  max-width: 18rem;
+  padding: 1rem;
+}
+
+#about-content {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  background-image: url(../images/spacejoy-85pCvDWDMmI-unsplash.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 3px solid #f7f3f5;
+  border-radius: 1rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  width: 70%;
+  margin: 2rem auto;
+  height: 35rem;
+  flex: 1;
+}
+
+#about .image-container {
+  max-width: 25rem;
+  height: auto;
+  border-radius: 1rem;
+  margin: auto;
+}
+
+#about img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #403234;
+}
+
+#about .content {
+  width: 30rem;
+  padding: 1rem;
+  margin: 2rem;
+  background-color: #e2c2b3;
+  border: 3px solid #403234;
+  border-radius: 1rem;
+}
+
+#about h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+#about p {
+  line-height: 1.6;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 1115px) {
+  #about-content {
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #about .content {
+    width: 15rem;
+  }
+  #about h3 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+  
+  #about p {
+    line-height: 1.3;
+    font-size: .75rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  #about .image-container {
+    max-width: 15rem;
+    height: auto;
+    border-radius: 1rem;
+    margin: auto;
+}
+#about .content {
+  width: 10rem;
+}
+#about h3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+#about p {
+  line-height: 1.3;
+  font-size: .75rem;
+}
+}
+/*Servies Styles*/
+#services {
+  display: flex;
+  width: 100%;
+  padding-top: 4.5rem;
+  margin-bottom: 4rem;
+  height: auto;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+#services h2 {
+  align-self: center;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  background-color: #e2c2b3;
+  border: 3px solid #f7f3f5;
+  border-radius: 3rem;
+  max-width: 18rem;
+  padding: 1rem;
+
+}
+
+#services .image-container {
+  display: flex;
+  max-width: 100%;
+  height: auto;
+  border: 3px solid #403234;
+  margin: 1rem;
+}
+
+#services img {
+  max-width: 100%;
+  height: auto;
+  flex: 1;
+}
+
+.service-container {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: auto;
+  flex: 2;
+}
+
+.service {
+  width: 25rem;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 2rem;
+  padding: 1rem;
+  background-color: #e2c2b3;
+  border: 3px solid #f7f3f5;
+  border-radius: 1rem;
+  flex-shrink: 2;
+}
+
+.service h3 {
+  text-align: center;
+  font-size: 700;
+  font-size: 2rem;
+  padding-bottom: .5rem;
+}
+
+.service p {
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+@media only screen and (max-width: 1450px) {
+  .service-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex: 2;
+  }
+
+  .service {
+    width: 20rem;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 2rem;
+    padding: 1rem;
+  background-color: #e2c2b3;
+  border: 3px solid #f7f3f5;
+  border-radius: 1rem;
+  flex: 2;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .service {
+    width: 15rem;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 2rem;
+    padding: 1rem;
+  background-color: #e2c2b3;
+  border: 3px solid #f7f3f5;
+  border-radius: 1rem;
+  flex: 2;
+  }
+}
+
+.gap {
+  box-sizing: border-box;
+  width: 100%;
+  height: 10rem;
+  background-color: #e2c2b3;
+  border: 1px solid #f7f3f5;
+  margin: 0;
+}
+
+/*Contact Styles */
+
+#contact {
+  display: flex;
+  width: 100%;
+  padding-top: 4.5rem;
+  height: 25rem;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  background-image: url(../images/spacejoy-85pCvDWDMmI-unsplash.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+#contact h2 {
+  font-size: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: #e2c2b3;
+  border: 3px solid #f7f3f5;
+  border-radius: 3rem;
+  max-width: 18rem;
+  padding: 1rem;
+}
+
+.info-container {
+  width: 50rem;
+  align-items: center;
+  justify-content: center;
+  background-color: #e2c2b3;
+  margin: auto;
+  padding: 2rem;
+  font-size: 2rem;
+  border:3px solid #f7f3f5;
+  border-radius: 1rem;
+}
+
+.info li {
+  padding: .2rem;
+}
+
+strong {
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 950px) {
+  .info-container {
+    width: 25rem;
+    font-size: 1rem;
+  }
+}
+  @media only screen and (max-width: 450px) {
+    .info-container {
+      width: 15rem;
+      font-size: 1rem;
+    }
+}
+
+footer {
+  background-color: #e2c2b3;
+  width:  100%;
+  height: 2rem;
+}
+
+footer h4 {
+  padding-top: .5rem;
+  padding-left: 1rem;
+}
